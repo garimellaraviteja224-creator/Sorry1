@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Bujji ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#5b0000,#870000,#c2185b);
+height:100vh;
+overflow:hidden;
+color:white;
+}
+
+.page{
+display:none;
+height:100vh;
+padding:30px;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+.active{
+display:flex;
+}
+
+h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+p{
+font-size:22px;
+line-height:1.7;
+max-width:900px;
+}
+
+button{
+margin-top:35px;
+padding:15px 40px;
+font-size:22px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+background:#ff4d6d;
+color:white;
+font-weight:bold;
+}
+
+button:hover{
+background:#ff1744;
+}
+
+.card{
+background:rgba(255,255,255,0.15);
+padding:35px;
+border-radius:25px;
+max-width:900px;
+backdrop-filter:blur(8px);
+box-shadow:0 0 20px rgba(255,255,255,.2);
+}
+
+.banner{
+
+position:fixed;
+top:15px;
+width:100%;
+text-align:center;
+font-size:45px;
+font-weight:bold;
+color:#fff5f7;
+text-shadow:3px 3px 10px red;
+display:none;
+
+}
+
+.hearts{
+
+position:fixed;
+width:100%;
+height:100%;
+pointer-events:none;
+
+}
+
+.hearts span{
+
+position:absolute;
+color:#ffb6c1;
+font-size:25px;
+animation:up 12s linear infinite;
+
+}
+
+@keyframes up{
+
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+.big{
+
+font-size:70px;
+
+}
+
+.small{
+
+font-size:20px;
+
+}
+
+.option{
+
+margin:15px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="banner" id="banner">
+🎉 HAPPY BIRTHDAY BUJJI 🎉
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="p1">
+
+<h1>Hi Bujji ❤️</h1>
+
+<div class="card">
+
+<p>
+
+I made this small webpage only for you...
+
+Because your smile means everything to me.
+
+Please spend just two minutes with your Gem.
+
+🥺❤️
+
+</p>
+
+<button onclick="next(2)">
+
+Open My Heart ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page" id="p2">
+
+<h2>
+
+🥺 How much angry are you on your Gem?
+
+</h2>
+
+<div class="card">
+
+<button class="option" onclick="next(3)">
+
+❤️ 100%
+
+</button>
+
+<br>
+
+<button class="option" onclick="next(4)">
+
+💕 50%
+
+</button>
+
+<br>
+
+<button class="option" onclick="next(5)">
+
+💖 25%
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="page" id="p3">
+
+<div class="big">
+
+🥺❤️
+
+</div>
+
+<div class="card">
+
+<h2>
+
+100% Angry...
+
+</h2>
+
+<p>
+
+Ohhhh...
+
+My Sweet Bujji...
+
+I know I hurt your heart.
+
+Seeing you upset hurts me much more than you know.
+
+I never wanted to make my beautiful Bujji sad.
+
+Please smile once...
+
+That one smile is enough to make my whole world beautiful again.
+
+❤️
+
+</p>
+
+<br>
+
+<h2>
+
+Gem is pouring all his love on Bujji...
+
+❤️❤️❤️❤️❤️❤️❤️
+
+</h2>
+
+<p>
+
+Slowly...
+
+My Bujji starts smiling again...
+
+😊
+
+</p>
+
+<button onclick="next(4)">
+
+Maybe only 50% now ❤️
+
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="page" id="p4">
+
+<div class="big">
+
+🤗
+
+</div>
+
+<div class="card">
+
+<h2>
+
+Yehhhh ❤️
+
+</h2>
+
+<p>
+
+Bujji ka anger thoda kam hua...
+
+Aur Gem ki happiness bahut zyada badh gayi...
+
+Can I get one tight hug?
+
+🤗❤️
+
+</p>
+
+<p>
+
+Gem hugs Bujji with lots of love...
+
+❤️🤗❤️
+
+</p>
+
+<button onclick="next(5)">
+
+Maybe only 25% ❤️
+
+</button>
+
+</div>
+
+</div>
+<!-- PAGE 5 -->
+
+<div class="page" id="p5">
+
+<div class="big">
+😘❤️
+</div>
+
+<div class="card">
+
+<h2>
+Yayyyyy ❤️
+</h2>
+
+<p>
+
+Gem is sooo happy...
+
+Thank you Bujji...
+
+Thank you for making my heart smile again.
+
+Now I know my Bujji is feeling much better.
+
+You are my happiness...
+
+You are my peace...
+
+You are my smile...
+
+You are my entire world.
+
+💋
+
+</p>
+
+<br>
+
+<h2>
+
+Gem gives a sweet kiss to Bujji...
+
+😘❤️😘
+
+</h2>
+
+<p>
+
+Thank you for forgiving this silly Gem.
+
+</p>
+
+<button onclick="next(6)">
+Final Surprise 🎁
+</button>
+
+</div>
+
+</div>
+
+<!-- PAGE 6 -->
+
+<div class="page" id="p6">
+
+<div class="card">
+
+<h1>
+❤️ My Dearest Bujji ❤️
+</h1>
+
+<p>
+
+Your Love...
+
+is My Happiness...
+
+❤️
+
+Please smile for me Jaan...
+
+Your smile is the most beautiful thing in my life.
+
+Whenever you smile...
+
+my heart smiles.
+
+Whenever you are happy...
+
+my whole world becomes beautiful.
+
+Whenever you are sad...
+
+my heart becomes heavy.
+
+I never want to hurt you.
+
+I only want to love you more...
+
+care for you more...
+
+and make you happier every single day.
+
+Thank you for being my best friend.
+
+Thank you for being my companion.
+
+Thank you for being my strength.
+
+Thank you for loving me so much.
+
+I wish to celebrate not only this birthday...
+
+but many...
+
+many...
+
+many more birthdays together with you.
+
+Growing old together...
+
+Laughing together...
+
+Travelling together...
+
+Holding your hand forever...
+
+That's my biggest dream.
+
+No matter what happens...
+
+I will always choose YOU.
+
+Again...
+
+Tomorrow...
+
+Forever...
+
+❤️❤️❤️
+
+</p>
+
+<br>
+
+<h2>
+
+I Love You Bujji
+
+❤️
+
+</h2>
+
+<p>
+
+Forever Yours,
+
+</p>
+
+<h2>
+
+Gem 💋💍
+
+</h2>
+
+<br>
+
+<p class="small">
+
+Thank you for opening my heart today.
+
+Happy Birthday once again my beautiful Bujji.
+
+❤️🎂❤️
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function next(page){
+
+document.querySelectorAll(".page").forEach(function(p){
+
+p.classList.remove("active");
+
+});
+
+document.getElementById("p"+page).classList.add("active");
+
+if(page>1){
+
+document.getElementById("banner").style.display="block";
+
+}
+
+}
+
+const hearts=document.getElementById("hearts");
+
+for(let i=0;i<50;i++){
+
+let h=document.createElement("span");
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+
+h.style.animationDelay=Math.random()*12+"s";
+
+h.style.fontSize=(18+Math.random()*25)+"px";
+
+hearts.appendChild(h);
+
+}
+
+</script>
+
+</body>
+
+</html>
+<!-- Romantic Footer -->
+<div id="footerLove">
+    ❤️ Forever & Always — Gem ❤️ Bujji ❤️
+</div>
+
+<style>
+
+#footerLove{
+    position:fixed;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+    color:#ffd6e7;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow:0 0 8px #ff3366;
+}
+
+.card{
+    animation:fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+button{
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 20px #ff4d88;
+}
+
+h1,h2{
+    text-shadow:2px 2px 10px rgba(255,255,255,.35);
+}
+
+</style>
+
+<script>
+
+/* Romantic Page Title */
+const titles=[
+"My Heart ❤️",
+"My Bujji ❤️",
+"My Happiness ❤️",
+"My Love ❤️",
+"Forever Gem ❤️ Bujji"
+];
+
+let index=0;
+
+setInterval(()=>{
+document.title=titles[index];
+index++;
+if(index>=titles.length){
+index=0;
+}
+},2000);
+
+/* Floating Hearts */
+setInterval(()=>{
+
+let heart=document.createElement("div");
+
+heart.innerHTML="❤️";
+
+heart.style.position="fixed";
+heart.style.left=Math.random()*100+"vw";
+heart.style.bottom="-30px";
+heart.style.fontSize=(20+Math.random()*20)+"px";
+heart.style.opacity="0.8";
+heart.style.pointerEvents="none";
+heart.style.transition="transform 7s linear, opacity 7s linear";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.style.transform="translateY(-110vh)";
+heart.style.opacity="0";
+},100);
+
+setTimeout(()=>{
+heart.remove();
+},7000);
+
+},700);
+
+/* Final Romantic Greeting */
+window.onload=function(){
+
+setTimeout(()=>{
+
+alert("❤️ Happy Birthday My Beautiful Bujji ❤️\n\nYour Gem Loves You Forever 💋💍");
+
+},1200);
+
+}
+
+</script>
